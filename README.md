@@ -71,30 +71,11 @@ $  ls -l /var/www/html/jpg_sizes
 ```
 
 //look on browser
+
 http://pi.ip.addre.ss/jpg_sizes/1920x1080.jpg
 
-Make a spreadsheet  (figure out about https).
-http://fairchildlabs.org/early/resolution.xlsx
 
-
-apt install ffmpeg
-
-
-###ffmpeg Documntation
-
-https://www.ffmpeg.org/ffmpeg.html
-
-Help Files 
-
-http://fairchildlabs.org/SeasonOne/ref/ffmpeg.txt
-http://fairchildlabs.org/SeasonOne/ref/ffmpeg_long.txt
-http://fairchildlabs.org/SeasonOne/ref/ffmpeg_long.txt
-
-To get from command line type:
-`$ ffmpeg --help`
-
-
-##13. Record Videos
+## 1.3 Record Videos
 
 `$ mkdir /var/www/html/video_13/`
 
