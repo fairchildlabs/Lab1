@@ -31,7 +31,7 @@ Look at the file it created
 
 -rw-r--r-- 1 root root 130609 Aug  4 14:19 /var/www/html/1s.jpg
 
-## 1.2. Get more detail about camera
+## 1.2 Get more detail about camera
 
 `$ v4l2-ctl --list-formats-ext > /var/www/html/usbresolution.txt`
 
@@ -70,7 +70,7 @@ $  ls -l /var/www/html/jpg_sizes
 
 ```
 
-//look on browser
+look at your picture on browser
 
 http://pi.ip.addre.ss/jpg_sizes/1920x1080.jpg
 
@@ -80,21 +80,24 @@ http://pi.ip.addre.ss/jpg_sizes/1920x1080.jpg
 `$ mkdir /var/www/html/video_13/`
 
 
-####Record a single video
+### 1.3.1 Record a single video
 `$ ffmpeg -f v4l2 -framerate 30 -video_size 640x480 -i /dev/video0 /var/www/html/video_13/640x480.mp4`
+
 <CTRL-C> to Stop
+
 http://pi.ip.addre.ss/video_13/640x480.mp4
 
-####Record a single video with sound
-##### Get the card # of USB Audio (Webcam) [card 2: in example]
-`$ arecord -l`
-<pre>
+### 1.3.2 Record a single video with sound
 
+Get the card # of USB Audio (Webcam) [card 2: in example]
+```
+$ arecord -l
 **** List of CAPTURE Hardware Devices ****
 card 2: W4DS [W4DS], device 0: USB Audio [USB Audio]
   Subdevices: 1/1
   Subdevice #0: subdevice #0
-</pre>
+```
+
 ##### Record video and audio in same capture
 `$ ffmpeg -f alsa -ac 2 -i hw:2 -f v4l2 -framerate 30 -video_size 640x480 -i /dev/video0 /var/www/html/video_13/640x480_sound.mp4`
 
