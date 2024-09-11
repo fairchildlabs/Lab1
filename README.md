@@ -1,5 +1,10 @@
 # Lab1
 
+```
+$ - means SSH or PI terminal
+PI> - means PI terminal ONLY
+```
+
 ## 1.1  - Shutdown PI and install USB Camera (video.....)
 
 `$ lsusb`
@@ -108,7 +113,7 @@ http://pi.ip.addre.ss/video_13/640x480_sound.mp4
 
 Use git to clone repository
 ```$ cd ~
-$ git clone https://github.com/fairchildlabs/SeasonOne.git
+$ git clone https://github.com/fairchildlabs/Lab1.git
 ```
 
 ON PI TERMINAL
