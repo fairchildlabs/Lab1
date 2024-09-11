@@ -1,6 +1,6 @@
 # Lab1
 
-##1.1  - Shutdown PI and install USB Camera (video.....)
+## 1.1  - Shutdown PI and install USB Camera (video.....)
 
 `$ lsusb`
 
@@ -31,7 +31,7 @@ Look at the file it created
 
 -rw-r--r-- 1 root root 130609 Aug  4 14:19 /var/www/html/1s.jpg
 
-##1.2. Get more detail about camera
+## 1.2. Get more detail about camera
 
 `$ v4l2-ctl --list-formats-ext > /var/www/html/usbresolution.txt`
 
