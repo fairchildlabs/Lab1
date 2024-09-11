@@ -109,23 +109,12 @@ card 2: W4DS [W4DS], device 0: USB Audio [USB Audio]
 
 http://pi.ip.addre.ss/video_13/640x480_sound.mp4
 
-## 1.4 Build Menu
+## 1.4 Clone Git Repo
 
 Use git to clone repository
 ```$ cd ~
 $ git clone https://github.com/fairchildlabs/Lab1.git
 ```
 
-ON PI TERMINAL
-`$ su root`
-TYPE LAB PASSWORD
-`$ cd ~`
-`$ cd SeasonOne/code/menu`
-`$ python menu.py`
 
-Look at the code in menu.py
-FROM PC PUTTY
-`$ cd ~`
-`$ cd SeasonOne/code/menu`
-`$ nano menu.py`
 
