@@ -83,7 +83,7 @@ http://pi.ip.addre.ss/jpg_sizes/1920x1080.jpg
 ### 1.3.1 Record a single video
 `$ ffmpeg -f v4l2 -framerate 30 -video_size 640x480 -i /dev/video0 /var/www/html/video_13/640x480.mp4`
 
-<CTRL-C> to Stop
+[CTRL-C] to Stop
 
 http://pi.ip.addre.ss/video_13/640x480.mp4
 
@@ -98,15 +98,18 @@ card 2: W4DS [W4DS], device 0: USB Audio [USB Audio]
   Subdevice #0: subdevice #0
 ```
 
-##### Record video and audio in same capture
+### 1.3.3 Record video and audio in same capture
+
 `$ ffmpeg -f alsa -ac 2 -i hw:2 -f v4l2 -framerate 30 -video_size 640x480 -i /dev/video0 /var/www/html/video_13/640x480_sound.mp4`
 
 http://pi.ip.addre.ss/video_13/640x480_sound.mp4
 
-##14. Build Menu
-### Use git to clone repository
-`$ cd ~`
-`$ git clone https://github.com/fairchildlabs/SeasonOne.git`
+## 1.4 Build Menu
+
+Use git to clone repository
+```$ cd ~
+$ git clone https://github.com/fairchildlabs/SeasonOne.git
+```
 
 ON PI TERMINAL
 `$ su root`
