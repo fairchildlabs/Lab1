@@ -12,9 +12,9 @@ Take a picture
 
 `$ fswebcam -r 1280x720 --no-banner /var/www/html/1.jpg`
 
-View it in browser
+View it in browser (pi.ip.addre.ss is your PI IP address or name)
 
-http://pi.ip.addre.ss/1.jpg
+http://pi.ip.addre.ss/1.jpg  
 
 Look at the file it created 
 
@@ -38,27 +38,28 @@ Look at the file it created
 Check it out in browser (for future reference)
 http://pi.ip.addre.ss/usbresolution.txt
 
-`$ mkdir /var/www/html/jpg_sizes`
+```
+$ mkdir /var/www/html/jpg_sizes
 
 
-`$ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg`
+$ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
 
-`$ fswebcam -r 1920x1080 --no-banner /var/www/html/jpg_sizes/1920x1080.jpg`
+$ fswebcam -r 1920x1080 --no-banner /var/www/html/jpg_sizes/1920x1080.jpg
 
-`$ fswebcam -r 1280x960 --no-banner /var/www/html/jpg_sizes/1280x960.jpg`
+$ fswebcam -r 1280x960 --no-banner /var/www/html/jpg_sizes/1280x960.jpg
 
-`$ fswebcam -r 1280x720 --no-banner /var/www/html/jpg_sizes/1280x720.jpg`
+$ fswebcam -r 1280x720 --no-banner /var/www/html/jpg_sizes/1280x720.jpg
 
-`$ fswebcam -r 1024x576 --no-banner /var/www/html/jpg_sizes/1024x576.jpg`
+$ fswebcam -r 1024x576 --no-banner /var/www/html/jpg_sizes/1024x576.jpg
 
-`$ fswebcam -r 800x600 --no-banner /var/www/html/jpg_sizes/800x600.jpg`
+$ fswebcam -r 800x600 --no-banner /var/www/html/jpg_sizes/800x600.jpg
 
-`$ fswebcam -r 640x360 --no-banner /var/www/html/jpg_sizes/640x360.jpg`
+$ fswebcam -r 640x360 --no-banner /var/www/html/jpg_sizes/640x360.jpg
 
-`$ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg`
+$ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
 
-`$  ls -l /var/www/html/jpg_sizes`
-
+$  ls -l /var/www/html/jpg_sizes
+```
 <pre>
 -rw-r--r-- 1 root root 167068 Aug 19 12:10 1024x576.jpg
 -rw-r--r-- 1 root root 225826 Aug 19 12:10 1280x720.jpg
