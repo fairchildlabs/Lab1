@@ -11,7 +11,7 @@ scoot_device * scootd_util_open_shared_memory(char *strFileName)
 	char *shm_ptr;
 	
 	// Create shared memory object
-	shm_fd = shm_open(shm_name, O_CREAT | O_RDWR, 0666);
+	shm_fd = shm_open(strFileName, O_CREAT | O_RDWR, 0666);
 	if (shm_fd == -1) 
 	{
 			perror("shm_open");
