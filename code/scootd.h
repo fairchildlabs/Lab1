@@ -10,14 +10,20 @@
 #include <string.h>
 
 
+typedef struct
+{
+	int state;
 
+} scoot_state;
 
 
 
 typedef struct
 {
-	unsigned int state;
-
+	scoot_state *pState;
+	
+	int shm_fd;
+	
 } scoot_device;
 
 
