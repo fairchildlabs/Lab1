@@ -1,7 +1,49 @@
 import pygame
 import button
+import mmap
+import os
+import struct
+from multiprocessing import shared_memory
+
+
 
 pygame.init()
+
+
+
+
+
+
+shm = shared_memory.SharedMemory(name='scootd_shared.mem')
+
+if(shm is None):
+    print ("Error attaching shared memory... exiting")
+    quit()
+
+
+
+
+#def set_shared(ival)
+def get_shared_ival():
+    shared_int = struct.unpack('i', shm.buf[:4])[0]
+    print (shared_int)
+    return shared_int
+        
+def set_shared_ival(ival):
+    shared_int = shm.buf
+    struct.pack_into('i', shared_int, 0, ival)
+    nval = get_shared_ival()
+    print("nval %d ival = %d\n", nval, ival)
+
+
+
+
+ival = get_shared_ival()
+
+#if ival == 0:
+#    print("IVAL == 0 quit")
+#    quit()
+
 
 #create game window
 SCREEN_WIDTH = 800
@@ -43,10 +85,11 @@ while run:
     #draw pause screen buttons
      if record_button.draw(screen):
         menu_state = "record"
+        set_shared_ival(11)
   else: 
      if stop_button.draw(screen):
         menu_state = "stop"
-
+        set_shared_ival(22)
 
 
  
@@ -62,4 +105,7 @@ while run:
 
   pygame.display.update()
 
-pygame.quit()
+
+shm.close()
+
+pygame.quit()

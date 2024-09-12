@@ -11,8 +11,6 @@ int main(int argc, char **argv)
 
 	printf("scootd - Lab1\n");
 
-	pScootDevice->state = 0;
-
 
 	if(	scootd_util_open_shared_memory("scootd_shared.mem", &aScootDevice))
 	{
@@ -24,11 +22,13 @@ int main(int argc, char **argv)
 		{
 			if(old_state != aScootDevice.pState->state)
 			{
+				usleep(10);
 				printf("State Change old_state = %d new_state = %d\n", old_state, aScootDevice.pState->state);
 				old_state = aScootDevice.pState->state;
 				sleep(1);
 			}
-
+			
+			usleep(100);
 		}
 
 	}

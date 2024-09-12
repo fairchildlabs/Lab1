@@ -10,8 +10,6 @@
 int scootd_util_open_shared_memory(char *strFileName, scoot_device *pScoot)
 {
 
-	char *shm_ptr;
-	
 	// Create shared memory ob	ject
 	pScoot->shm_fd = shm_open(strFileName, O_CREAT | O_RDWR, 0666);
 	if (pScoot->shm_fd == -1) 
@@ -29,7 +27,7 @@ int scootd_util_open_shared_memory(char *strFileName, scoot_device *pScoot)
 	
 		// Map the shared memory object into the process address space
 	pScoot->pState = mmap(0, sizeof(scoot_state), PROT_READ | PROT_WRITE, MAP_SHARED, pScoot->shm_fd, 0);
-	if (shm_ptr == MAP_FAILED) 
+	if (pScoot->pState == MAP_FAILED) 
 	{
 			perror("mmap");
 			return 1;

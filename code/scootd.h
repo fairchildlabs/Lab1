@@ -27,7 +27,8 @@ typedef struct
 } scoot_device;
 
 
-scoot_device * scootd_util_open_shared_memory(char *strFileName);
+int scootd_util_open_shared_memory(char *strFileName, scoot_device *pScoot);
+
 
 
 
