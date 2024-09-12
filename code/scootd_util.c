@@ -33,7 +33,7 @@ scoot_device * scootd_util_open_shared_memory(char *strFileName)
 			exit(1);
 	}
 
-	return (scoot_device *)shm_ptr
+	return (scoot_device *)shm_ptr;
 
 
 }
