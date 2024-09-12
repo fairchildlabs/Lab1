@@ -116,6 +116,4 @@ Use git to clone repository
 $ git clone https://github.com/fairchildlabs/Lab1.git
 ```
 
-https://www.tomshardware.com/how-to/back-up-raspberry-pi-as-disk-image
-
 
