@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 
 	printf("scootd - Lab1\n");
 
-	scootDevice.state = 0;
+	pScootDevice->state = 0;
 
 	pScootDevice = scootd_util_open_shared_memory("scootd_shared.mem");
 
