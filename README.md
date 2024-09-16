@@ -140,6 +140,10 @@ PI> ./scootcame
 ```
 ## 1.5. On PC, load the Copilot AI conversation into your PC Browser
 
+### Houston Statistics
 https://copilot.microsoft.com/sl/bFlaxeH3ffE
 
+### Sharing data between C program and python
+
+https://copilot.microsoft.com/sl/ienmTv87E96
 
