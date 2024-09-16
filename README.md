@@ -27,9 +27,9 @@ Take a picture
 
 `$ fswebcam -r 1280x720 --no-banner /var/www/html/1.jpg`
 
-View it in browser (pi.ip.addre.ss is your PI IP address or name)
+View it in browser (<YOUR_PI_NAME> is your PI IP address or name)
 
-http://pi.ip.addre.ss/1.jpg  
+http://<YOUR_PI_NAME>/1.jpg  
 
 Look at the file it created 
 
@@ -51,26 +51,19 @@ Look at the file it created
 `$ v4l2-ctl --list-formats-ext > /var/www/html/usbresolution.txt`
 
 Check it out in browser (for future reference)
-http://pi.ip.addre.ss/usbresolution.txt
+http://<YOUR_PI_NAME>/usbresolution.txt
 
 ```
 $ mkdir /var/www/html/jpg_sizes
 
 
 $ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
-
 $ fswebcam -r 1920x1080 --no-banner /var/www/html/jpg_sizes/1920x1080.jpg
-
 $ fswebcam -r 1280x960 --no-banner /var/www/html/jpg_sizes/1280x960.jpg
-
 $ fswebcam -r 1280x720 --no-banner /var/www/html/jpg_sizes/1280x720.jpg
-
 $ fswebcam -r 1024x576 --no-banner /var/www/html/jpg_sizes/1024x576.jpg
-
 $ fswebcam -r 800x600 --no-banner /var/www/html/jpg_sizes/800x600.jpg
-
 $ fswebcam -r 640x360 --no-banner /var/www/html/jpg_sizes/640x360.jpg
-
 $ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
 
 $  ls -l /var/www/html/jpg_sizes
@@ -87,7 +80,7 @@ $  ls -l /var/www/html/jpg_sizes
 
 look at your picture on browser
 
-http://pi.ip.addre.ss/jpg_sizes/1920x1080.jpg
+http://<YOUR_PI_NAME>/jpg_sizes/1920x1080.jpg
 
 
 ## 1.3 Record Videos
@@ -100,24 +93,25 @@ http://pi.ip.addre.ss/jpg_sizes/1920x1080.jpg
 
 [CTRL-C] to Stop
 
-http://pi.ip.addre.ss/video_13/640x480.mp4
+http://<YOUR_PI_NAME>/video_13/640x480.mp4
 
 ### 1.3.2 Record a single video with sound
 
 Get the card # of USB Audio (Webcam) [card 2: in example]
 ```
 $ arecord -l
+```
+
 **** List of CAPTURE Hardware Devices ****
 card 2: W4DS [W4DS], device 0: USB Audio [USB Audio]
   Subdevices: 1/1
   Subdevice #0: subdevice #0
-```
 
 ### 1.3.3 Record video and audio in same capture
 
 `$ ffmpeg -f alsa -ac 2 -i hw:2 -f v4l2 -framerate 30 -video_size 640x480 -i /dev/video0 /var/www/html/video_13/640x480_sound.mp4`
 
-http://pi.ip.addre.ss/video_13/640x480_sound.mp4
+http://<YOUR_PI_NAME>/video_13/640x480_sound.mp4
 
 ## 1.4 Clone Git Repo
 
