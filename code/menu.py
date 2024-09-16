@@ -33,7 +33,7 @@ def set_shared_ival(ival):
     shared_int = shm.buf
     struct.pack_into('i', shared_int, 0, ival)
     nval = get_shared_ival()
-    print("nval %d ival = %d\n", nval, ival)
+    print("PYTHON:nval %d ival = %d\n" % (nval, ival))
 
 
 

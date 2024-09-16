@@ -1,8 +1,10 @@
-# Lab1
+# Lab1
+
 
 ```
 $ - means SSH or PI terminal
 PI> - means PI terminal ONLY
+//This is a comment in code, for information, don't type
 ```
 
 ## 1.1  - Shutdown PI and install USB Camera (video.....)
@@ -114,6 +116,15 @@ http://pi.ip.addre.ss/video_13/640x480_sound.mp4
 Use git to clone repository
 ```$ cd ~
 $ git clone https://github.com/fairchildlabs/Lab1.git
+$ cd Lab1
+$ cd code
+
+//Makes the scootd program in C langue
+$ make
+//Run
+$ 
 ```
+## 1.5. On PC, load the Copilot AI conversation
+
 
 

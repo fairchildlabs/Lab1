@@ -8,6 +8,10 @@ int main(int argc, char **argv)
 {
 	unsigned int old_state = 0;
 	scoot_device aScootDevice;
+	
+	time_t t;
+		struct tm *tmp;
+		char formatted_time[50];
 
 	printf("scootd - Lab1\n");
 
@@ -23,7 +27,11 @@ int main(int argc, char **argv)
 			if(old_state != aScootDevice.pState->state)
 			{
 				usleep(10);
-				printf("State Change old_state = %d new_state = %d\n", old_state, aScootDevice.pState->state);
+				 time(&t);
+    			tmp = localtime(&t);
+				strftime(formatted_time, sizeof(formatted_time), "%a %b %d %H:%M:%S %Y", tmp);
+				
+				printf("SCOOTD:State Change old_state = %d new_state = %d @ %s\n", old_state, aScootDevice.pState->state, formatted_time);
 				old_state = aScootDevice.pState->state;
 				sleep(1);
 			}
