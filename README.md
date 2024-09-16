@@ -12,7 +12,7 @@ LABPC> This means type this into the cmd window on your labpc
 
 ## Rename your PI (YOURPINAME - something you can remember)
 ``` 
-$ sudo hostnamectl set-hostname YOURPINAME 
+PI> sudo hostnamectl set-hostname YOURPINAME 
 ```
 
 
