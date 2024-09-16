@@ -129,7 +129,7 @@ $ git clone https://github.com/fairchildlabs/Lab1.git
 $ cd Lab1
 $ cd code
 
-//Makes the scootd program in C langue
+//Makes the scootd program in C language
 
 $ make
 //Run - Open Terminal Window on PI (top banner >_ symbol)
