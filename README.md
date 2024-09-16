@@ -1,11 +1,20 @@
 # Lab1
 
+## 1.0 Install SD Card in PI, boot
 
 ```
+(Demonstration)
 $ - means SSH or PI terminal
 PI> - means PI terminal ONLY
-//This is a comment in code, for information, don't type
+//This is a comment in code, for information only, don't type
+LABPC> This means type this into the cmd window on your labpc
 ```
+
+## Rename your PI (YOURPINAME - something you can remember)
+``` 
+$ sudo hostnamectl set-hostanme YOURPINAME 
+```
+
 
 ## 1.1  - Shutdown PI and install USB Camera (video.....)
 
@@ -124,7 +133,8 @@ $ make
 //Run
 $ 
 ```
-## 1.5. On PC, load the Copilot AI conversation
+## 1.5. On PC, load the Copilot AI conversation into your PC Browser
 
+https://copilot.microsoft.com/sl/bFlaxeH3ffE
 
 
