@@ -123,15 +123,20 @@ http://pi.ip.addre.ss/video_13/640x480_sound.mp4
 ## 1.4 Clone Git Repo
 
 Use git to clone repository
-```$ cd ~
+```
+$ cd ~
 $ git clone https://github.com/fairchildlabs/Lab1.git
 $ cd Lab1
 $ cd code
 
 //Makes the scootd program in C langue
+
 $ make
-//Run
-$ 
+//Run - Open Terminal Window on PI (top banner >_ symbol)
+PI> cd Lab1/code
+PI> ./scootcame
+//Push Stop and Record Buttons.  <CTRL><TAB> to see background window changing values to the scootd C Program
+
 ```
 ## 1.5. On PC, load the Copilot AI conversation into your PC Browser
 
