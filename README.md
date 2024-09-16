@@ -22,7 +22,6 @@ PI> sudo hostnamectl set-hostname YOURPINAME
 
 Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 
-`$ apt install fswebcam`
 
 Take a picture
 
