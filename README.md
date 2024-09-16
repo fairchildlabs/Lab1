@@ -127,7 +127,7 @@ $ cd code
 $ make
 //Run - Open Terminal Window on PI (top banner >_ symbol)
 PI> cd Lab1/code
-PI> ./scootcame
+PI> ./scootcam
 //Push Stop and Record Buttons.  <CTRL><TAB> to see background window changing values to the scootd C Program
 
 ```
