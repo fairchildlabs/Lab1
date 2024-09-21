@@ -4,10 +4,11 @@
 
 ```
 (Demonstration)
-$ - means SSH or PI terminal
-PI> - means PI terminal ONLY
+$      - copy and paste into SSH or PI terminal (only the charecters after the $) 
+PI>    - means PI terminal ONLY (Touchscreen or VNC)
 //This is a comment in code, for information only, don't type
-LABPC> This means type this into the cmd window on your labpc
+LABPC>  0This means type this into the cmd window on your labpc
+$$$ This means the lines that follow can be copied and pasted all at once (multiple lines)
 ```
 
 ## Rename your PI (YOURPINAME - something you can remember)
@@ -56,15 +57,15 @@ http://<YOUR_PI_NAME>/usbresolution.txt
 ```
 $ mkdir /var/www/html/jpg_sizes
 
-
-$ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
-$ fswebcam -r 1920x1080 --no-banner /var/www/html/jpg_sizes/1920x1080.jpg
-$ fswebcam -r 1280x960 --no-banner /var/www/html/jpg_sizes/1280x960.jpg
-$ fswebcam -r 1280x720 --no-banner /var/www/html/jpg_sizes/1280x720.jpg
-$ fswebcam -r 1024x576 --no-banner /var/www/html/jpg_sizes/1024x576.jpg
-$ fswebcam -r 800x600 --no-banner /var/www/html/jpg_sizes/800x600.jpg
-$ fswebcam -r 640x360 --no-banner /var/www/html/jpg_sizes/640x360.jpg
-$ fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
+$$$
+fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
+fswebcam -r 1920x1080 --no-banner /var/www/html/jpg_sizes/1920x1080.jpg
+fswebcam -r 1280x960 --no-banner /var/www/html/jpg_sizes/1280x960.jpg
+fswebcam -r 1280x720 --no-banner /var/www/html/jpg_sizes/1280x720.jpg
+fswebcam -r 1024x576 --no-banner /var/www/html/jpg_sizes/1024x576.jpg
+fswebcam -r 800x600 --no-banner /var/www/html/jpg_sizes/800x600.jpg
+fswebcam -r 640x360 --no-banner /var/www/html/jpg_sizes/640x360.jpg
+fswebcam -r 640x480 --no-banner /var/www/html/jpg_sizes/640x480.jpg
 
 $  ls -l /var/www/html/jpg_sizes
 
