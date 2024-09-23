@@ -10,7 +10,7 @@
 int scootd_util_open_shared_memory(char *strFileName, scoot_device *pScoot)
 {
 
-	// Create shared memory ob	ject
+	// Create shared memory object
 	pScoot->shm_fd = shm_open(strFileName, O_CREAT | O_RDWR, 0666);
 	if (pScoot->shm_fd == -1) 
 	{
@@ -38,6 +38,10 @@ int scootd_util_open_shared_memory(char *strFileName, scoot_device *pScoot)
 
 }
 
+int scootd_util_close_shared_memroy(scoot_device *pScoot)
+{
+	close(pScoot->shm_fd);
+}
 
 
 
